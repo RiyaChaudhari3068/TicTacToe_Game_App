@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="50sp"
+        android:textColor="@color/purple_700"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X Turn"
+        android:textSize="35sp"
+        android:textColor="@color/purple_700"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/playernamex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1 name"
+                android:textColor="@color/playerx"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/score_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:textColor="@color/playerx"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/playernameo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2 name"
+                android:textColor="@color/playero"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/score_o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:textColor="@color/playero"
+                />
+
+        </LinearLayout>
+
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        >
+
+     <Button
+         android:id="@+id/btn0"
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:tag="0"
+         android:background="@color/grey"
+         android:textSize="50sp"
+         android:padding="10dp"
+         android:layout_margin="5dp"
+         />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="2"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="3"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="4"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="5"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="6"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="7"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="8"
+            android:background="@color/grey"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered by Riya Chaudhari"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="50dp"
+        tools:ignore="HardcodedText" />
+
+
+
+</LinearLayout>

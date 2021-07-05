@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Entry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="false"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:text="Tic Tac Toe\n Game"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etplayerx"
+            android:hint="Enter First Player's Name"
+            android:background="@drawable/borderonly"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_baseline_check_circle_24"
+            android:drawableTint="@color/playerx"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etplayero"
+            android:hint="Enter Second Player's Name"
+            android:background="@drawable/borderonly"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_cancel_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/playero"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Next"
+            android:onClick="goNext"
+            android:background="@drawable/solidbtn_rounded"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered by Riya Chaudhari"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="30dp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
